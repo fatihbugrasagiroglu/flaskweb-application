@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h2>&nbsp;&nbsp;&nbsp;Welcome to Fatih Bugra Sagiroglu Assignment 2 Home Page </h2>
+    <h1> &nbsp;&nbsp;&nbsp; Social Media 1: Twitter </h1>
+    &nbsp;&nbsp;<img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-03-512.png" alt="Trulli" width="100" height="100">
+    <p> &nbsp;&nbsp;<a href="{{ url_for('send') }}">Click here to post on Twitter!</a> </p>
+    
+    <h1> &nbsp;&nbsp;&nbsp; Social Media 2: Reddit </h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png" alt="Trulli" width="80" height="80">
+    <p> &nbsp;&nbsp;<a href="{{ url_for('postreddit') }}">Click here to post on Reddit!</a> </p>
+    
+    {% endblock %}
+</body>
+</html>
